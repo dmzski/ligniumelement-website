@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # We use pnpm
 package-lock.json
+
+src/assets/images

@@ -7,7 +7,10 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.NODE_ENV === "production" ? "https://www.lignumelement.com" : undefined,
+  site:
+    process.env.NODE_ENV === "production"
+      ? "https://www.lignumelement.com"
+      : undefined,
   vite: {
     plugins: [tailwindcss()],
   },

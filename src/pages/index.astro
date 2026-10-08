@@ -7,7 +7,7 @@ const description =
 const title = "Lignum Element | Projets";
 
 const allImages = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/projets/**/*.png",
+  "/src/assets/images/**/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP,AVIF}",
 );
 
 const groups = await Object.entries(allImages).reduce(

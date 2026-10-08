@@ -10,16 +10,16 @@
     "format": "pnpm exec prettier . --write"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource/roboto": "^5.1.1",
-    "@tailwindcss/vite": "^4.0.3",
-    "astro": "^5.15.5",
-    "tailwindcss": "^4.0.3"
+    "astro": "^7.3.8"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "prettier": "^3.5.0",
     "prettier-plugin-astro": "^0.14.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.3.3"
   },
   "packageManager": "pnpm@10.21.0"
 }
