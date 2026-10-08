@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 
 const pathname = Astro.url.pathname;
+const isProjects = pathname === "/";
+const isAbout = pathname.startsWith("/about");
 ---
 
 <header
@@ -22,8 +24,8 @@ const pathname = Astro.url.pathname;
   <nav
     class="text-primary uppercase text-sm md:text-lg flex items-center gap-6 py-2 xl:px-24"
   >
-    <a class="min-w-fit font-semibold" href="/">Projets</a>
+    <a class={`min-w-fit ${isProjects ? "font-semibold" : ""}`} href="/">Projets</a>
     <span class="font-light text-4xl">•</span>
-    <a class="min-w-fit" href="/about">Agence et contact</a>
+    <a class={`min-w-fit ${isAbout ? "font-semibold" : ""}`} href="/about">Agence et contact</a>
   </nav>
 </header>
